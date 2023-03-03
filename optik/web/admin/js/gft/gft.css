@@ -1,0 +1,14 @@
+/*******************************************************************************
+ * Artifact:    gft.css                                                        *
+ * Version:     0.1                                                            *
+ * Date:        16/11/2022 21:30:00                                            *
+ * Author:      Miguel Angel Gil Rios - angel.grios@gmail.com                  *
+ * Comments:    Grios-Filter-Table (gft).                                      *
+ *              This code was adapted from:                                    *
+ *              https://stackblitz.com/edit/js-xtvtgr?file=index.js            *
+ ******************************************************************************/
+th.hide-cell,
+td.hide-cell,
+tr.hide-row {
+  display: none;
+}

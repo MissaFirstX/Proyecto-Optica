@@ -1,0 +1,162 @@
+<div class="row">
+    <div class="modulo-title">
+        <span>
+            <span class="h4">M&oacute;dulo de Gesti&oacute;n de Lentes de Contacto</span>
+        </span>
+        <span class="cerrarModulo float-end"><a href="#" onclick="cerrarModulo();">
+                <i class="fas fa-times"></i>
+            </a>
+        </span>
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div id="divDetalle" class="col-12 col-md-7">
+        <div class="card cards">
+            <div class="card-header card-hform">
+                Detalles Lentes de Contacto
+            </div>
+            <div class="card-body bodies formulario">
+                <div class="row sc">
+                    <div class="col-12">
+                        <!-- datos personales -->
+                        <div class="row seccion-campos">
+                            <span class="span-t">Acerca de &nbsp;<i class="fas fa-book-open"></i></span>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtNombre" type="text" required />
+                                    <label>Nombre:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtMarca" type="text" required />
+                                    <label>Marca:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtQueratometria" type="text" required />
+                                    <label>Queratometria:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtExistenciasL" type="text" required />
+                                    <label>Existencias:</label>
+                                </div>
+                            </div>                                                       
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtCodigoBarrasL" type="text" required />
+                                    <label>C&oacute;digo de Barras:</label>
+                                </div>
+                            </div>                         
+                            </div>
+                            
+                            
+                        <!-- Precios -->
+                        <div class="row seccion-campos">
+                            <span class="span-t">Precios, Compras y Ventas &nbsp;<i class="fas fa-money-check"></i></span>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtPrecioCompraL" type="text" required />
+                                    <label>Precio Compra:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtPrecioVentaL" type="text" required />
+                                    <label>Precio Venta:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Multimedia -->
+                        <div class="row seccion-campos">
+                            <span class="span-t">Multimedia &nbsp;<i class="fas fa-camera"></i></span>        
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                            </div> 
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="form-floating bg-gradient">                                    
+                                    <input class="form-control" type="file" id="imgLente" placeholder="Imagen:">
+                                    <label for="imgLente">Imagen:</label>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="idLenteContacto" type="hidden" disabled  />                                    
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="idProducto" type="hidden" disabled  />                                    
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- botones -->
+                <div class="row justify-content-center">
+                    <div class=" col-12">
+                        <div class="row">
+                            <div class="col-4 btn-div">
+                                <button class="btn btn-primary" onclick="cm.save();"><i
+                                        class="fas fa-save"></i>&nbsp;Guardar</button>
+                            </div>
+                            <div class="col-4 btn-div">
+                                <button class="btn btn-danger" onclick="cm.remove();"><i
+                                        class="fas fa-trash"></i>&nbsp;Eliminar</button>
+                            </div>
+                            <div class="col-4 btn-div">
+                                <button class="btn btn-success" onclick="cm.limpiarFormularioDetalle();"><i
+                                        class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divCatalogo" class="col-12 col-md-5">
+        <div class="card cards">
+            <div class="card-header card-hform">
+                <div class="row">
+                    <div class="col-12">Listado de Lentes de Contacto</div>
+                    <div class="col-12">
+                        <form class="form">
+                            <label for="search">
+                                <input class="input" type="text" required="" placeholder="Buscar" id="txtSearch">
+                                <div class="fancy-bg"></div>
+                                <div class="search">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                        class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                                        <g>
+                                            <path
+                                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body bodies table-responsive">
+                <table id="tblLentesC" class="table">
+                    <thead aria-disabled="true">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Marca</th>
+                            <th>Precio Compra</th>
+                            <th>Precio Venta</th>
+                            <th>Existencias</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyLentesC"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

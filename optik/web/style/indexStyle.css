@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+body h1,
+h2 {
+    font-family: myfont;
+}
+
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor .usuario {
+    position: relative;
+}
+
+.contenedor .usuario input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-family: mytext;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.contenedor .usuario label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.contenedor .usuario input:focus~label,
+.contenedor .usuario input:valid~label {
+    top: -20px;
+    left: 0;
+    color: cyan;
+    font-size: 12px;
+}
+
+.btn-inicio {
+
+    background: transparent;
+    border: 1px #03e9f4 solid;
+    border-radius: 5px;
+
+    color: white;
+    font-family: myfont;
+
+    padding: 8px 20px;
+    width: 100%;
+
+    transition: background .5s 0s ease-in-out;
+}
+
+.btn-inicio:hover {
+
+    background: #07468e;
+}
+
+@keyframes btn-animation {}
+
+@font-face {
+    font-family: myfont;
+    src: url("fuentes/Righteous/Righteous-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: mytext;
+    src: url("fuentes/YanoneKaffeesatz-VariableFont_wght.ttf") format("opentype");
+}
+
+
+/******************* RESPONSIVE ********************************/
+@media(max-width:480px) {
+
+    .contenedor{
+        width: 300px;        
+        top: 250px;
+    }
+}

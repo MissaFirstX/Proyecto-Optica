@@ -1,0 +1,632 @@
+body {
+    font-family: myFont;
+    font-size: 14px;
+    position: relative;
+}
+
+header {
+    padding-bottom: 0;
+}
+
+.fondoMenu {
+    background-color: #141e30;
+}
+
+.navM {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #080e18;
+    border-bottom: 3px #637cac solid;
+
+    height: 60px;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    padding: 4px 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.optica_menu_item,
+.optica_menu_item:link,
+.optica_menu_item:visited,
+.optica_menu_item:active {
+
+    margin-top: 5px;
+
+    color: #c1dee6;
+}
+
+.optica_menu_item:hover {
+    color: white;
+    background-color: rgba(118, 129, 203, 0.35);
+    border-radius: 10px;
+}
+
+.producto_item_menu {
+    background-color: #192740;
+    padding: 0;
+}
+
+.producto_item_menu a {
+    color: rgb(198, 222, 244);
+}
+
+.producto_item_menu li {
+    border-bottom: 2px #243453 solid;
+}
+
+.producto_item,
+.producto_item:link,
+.producto_item:visited,
+.producto_item:active {
+    color: #c1dee6;
+}
+
+.producto_item:hover {
+    background-color: rgba(118, 129, 203, 0.35);
+    border-radius: 10px;
+    color: white;
+}
+
+.hamburguesa-btn {
+    color: #3a7985;
+    background-color: #243453;
+    border: none;
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.hamburguesa-btn:visited,
+.hamburguesa-btn:active {
+    color: #3a7985;
+    background-color: #364769;
+
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+.hamburguesa {
+    width: 20px;
+    height: 20px;
+}
+
+.cards {
+    background-color: transparent;
+    position: relative;
+    animation: text-blur-out .3s cubic-bezier(.55, .085, .68, .53) reverse both;
+}
+
+@keyframes text-blur-out {
+    0% {
+        filter: blur(.01)
+    }
+
+    100% {
+        filter: blur(15px) opacity(0)
+    }
+}
+
+.card-hform {
+    color: white;
+    background-color: #080e18;
+    font-size: 18px;
+}
+
+.bodies {
+    background-color: #1d2d4a;
+
+}
+
+.cards .formulario {
+    height: 430px;
+    overflow-y: scroll;
+}
+
+.bodies table {
+    color: white;
+    margin: 0;
+}
+
+.bodies a {
+    color: #91b9ff;
+}
+
+.bodies a:hover {
+    color: #276fff;
+}
+
+.bodies thead {
+    color: #bdcbe4;
+    text-shadow: 1.5px 1.5px #0d182c;
+    background-color: #080e18;
+}
+
+
+.bodies tr:hover {
+    color: #476cb4;
+    background-color: #2a3854;
+}
+
+.bodies .input-bodies {
+    position: relative;
+}
+
+.bodies .input-bodies input {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-family: mytext;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 3px;
+    outline: none;
+    background: transparent;
+}
+
+.bodies .input-bodies label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #d1daee;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.span-generos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #d1daee;
+    pointer-events: none;
+    transition: .5s;
+    margin-right: 0;
+}
+
+.span-generos .flecha {
+
+    margin-left: 200px;
+    text-align: right;
+    font-size: 10px;
+}
+
+.span-t {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+    background-color: #637dac96;
+    border-radius: 10px;
+}
+
+.bodies select {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-family: myfont;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 2px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.bodies select:focus,
+.bodies select:active {
+    outline: none !important;
+    background-color: transparent;
+    color: #fff;
+
+    padding: 0;
+}
+
+.bodies option {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #072b6f67;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bodies .input-bodies input:focus~label,
+.bodies .input-bodies input:valid~label {
+    top: -15px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.div-check{
+    position: relative;
+    padding: 10px;
+}
+
+.div-check input{
+    margin-top: 6%;
+    margin-left: 50%;
+}
+
+.div-check label{
+    position: absolute;
+}
+
+
+
+.btn-ojo button{
+
+    background: transparent;
+    border: none;
+
+    color: white;
+    font-family: myfont;
+    font-size: 15px;
+    text-align: center;
+
+    width: 25px;
+    height: 25px;
+}
+
+.btn-ojo button:hover{
+    color: cyan;
+}
+
+.label-rb {
+    top: -15px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.seccion-campos {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.btn-div {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.btn-div button {
+    background: transparent;
+    border: 1px #03e9f4 solid;
+    border-radius: 5px;
+
+    color: white;
+    font-family: myfont;
+
+    padding: 8px 20px;
+
+    transition: background .5s 0s ease-in;
+}
+
+.modulo-title {
+    color: white;
+    text-align: left;
+
+    border: none;
+    border-bottom: 2px cyan solid;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    margin-top: 0;
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+
+.modulo-title a {
+    margin-right: 15px;
+    margin-left: auto;
+    color: white;
+
+}
+
+.cerrarModulo a {
+    margin-top: 15px;
+
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.cerrarModulo a:hover {
+    color: rgb(255, 121, 121) !important;
+}
+
+#contenedor_principal {
+    z-index: 1;
+    margin-top: 0;
+    animation: text-blur-out .7s cubic-bezier(.55, .085, .68, .53) reverse both
+}
+
+
+/* From uiverse.io by @adamgiebl */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 10px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(16, 68, 172);
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.5em);
+}
+
+/************************* Barra de busqueda ************************/
+/*  FILTRO   */
+
+/* this is a recreation of twitter search in css */
+.form {
+    --input-text-color: #fff;
+    --input-bg-color: transparent;
+    --focus-input-bg-color: transparent;
+    --text-color: #949faa;
+    --active-color: #03e9f4;
+    --width-of-input: 100%;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+}
+/* form style */
+.form {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    isolation: isolate;
+}
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 30px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* label styling */
+label {
+    width: 100%;
+    padding: 0.8em;
+    height: 40px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+}
+
+.search,.close-btn {
+    position: absolute;
+}
+/* styling search-icon */
+.search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+
+}
+/* svg -- size */
+svg {
+    width: 17px;
+    display: block;
+}
+/* styling of close button */
+.close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+}
+/* styling of input */
+.input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--text-color)
+}
+/* input background change in focus */
+.input:focus ~ .fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+}
+/* search icon color change in focus */
+.input:focus ~ .search {
+    fill: var(--active-color);
+}
+/* showing close button when typing */
+.input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+}
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+/* FIN FILTRO */
+
+
+/********************************************************************/
+@font-face {
+    font-family: myfont;
+    src: url("fuentes/Righteous/Righteous-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: mytext;
+    src: url("fuentes/YanoneKaffeesatz-VariableFont_wght.ttf") format("opentype");
+}
+
+/********************************************************************/
+@media(max-width: 1280px) {
+    #menuPrincipal {
+        background-color: #080e18;
+        z-index: 2;
+    }
+
+    .cards .formulario {
+        height: 590px;
+        overflow-y: scroll;
+    }
+
+    img {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+
+@media(max-width:500px) {
+    #menuPrincipal {
+        background-color: #080e18;
+        z-index: 2;
+    }
+
+    #contenedor_principal *{
+        font-size: 18px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bodies .table {
+        margin: 0;
+        left: 2px;
+        padding: 0;
+    }
+
+    .cerrarModulo a {
+        font-size: 18px;
+    }
+
+    .cards {
+        position: relative;
+        margin-top: 8px;
+        width: 100%;        
+        padding: 0;
+        
+    }
+
+    .card-hform{
+        font-size: 16px;
+    }
+
+    .modulo-title {
+        width: 95%;
+        font-size: 25px;
+    }
+
+    .modulo-title~span{
+        font-size: 35px !important;
+    }
+
+    .cards {
+        overflow-y: scroll;
+    }
+
+
+    .div-check label{
+        width: min-content;
+        text-align:center;
+        margin-bottom: 15px;
+    }
+
+    .div-check input{
+        margin-top: 3%;
+        margin-left: 20%;
+    }
+
+    .formulario button{
+        font-size: 12px !important;
+    }
+}

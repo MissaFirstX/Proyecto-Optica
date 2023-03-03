@@ -1,0 +1,206 @@
+<div class="row">
+    <div class="modulo-title">
+        <span>
+            <span class="h3">M&oacute;dulo de Gesti&oacute;n de Clientes</span>
+        </span>
+        <span class="cerrarModulo float-end"><a href="#" onclick="cerrarModulo();">
+                <i class="fas fa-times"></i>
+            </a>
+        </span>
+    </div>
+</div>
+<div class="row mt-2">
+    <div id="divDetalle" class="col-12 col-md-7">
+        <div class="card cards">
+            <div class="card-header card-hform">
+                Detalles del Cliente
+            </div>
+            <div class="card-body bodies formulario">
+                <div class="row sc">
+                    <div class="col-12">
+                        <!-- datos personales -->
+                        <div class="row seccion-campos">
+                            <span class="span-t">Datos personales &nbsp;<i class="fas fa-user"></i></span>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtNombreC" type="text" required />
+                                    <label>Nombre:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtApellidoPaternoC" type="text" required />
+                                    <label>Apellido Paterno:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtApellidoMaternoC" type="text" required />
+                                    <label>Apellido Materno:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="form-group">
+                                    <select id="txtGeneroC" name="generos" class="form-select form-control">
+                                        <option value="" selected>G&eacute;nero</option>
+                                        <option value="O">Otro</option>
+                                        <option value="M">Masculino</option>
+                                        <option value="F">Femenino</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtFechaNacimientoC" type="date" />
+                                    <label>Fecha de Nacimiento:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dirección -->
+                        <div class="row seccion-campos">
+                            <span class="span-t">Direcci&oacute;n &nbsp;<i class="fas fa-map-marker-alt"></i></span>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtCalleC" type="text" required />
+                                    <label>Calle:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtColoniaC" type="text" required />
+                                    <label>Colonia:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtNumeroDomicilioC" type="text" required />
+                                    <label>N&uacute;mero de Domicilio:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtCodigoPostalC" type="text" required />
+                                    <label>C&oacute;digo Postal:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtCiudadC" type="text" required />
+                                    <label>Ciudad:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtEstadoC" type="text" required />
+                                    <label>Estado:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- datos de contacto -->
+                        <div class="row seccion-campos">
+                            <span class="span-t">Contacto &nbsp;<i class="fas fa-phone-alt"></i></span>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtTelefonoCasaC" type="tel" required />
+                                    <label>Tel&eacute;fono de Casa:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtTelefonoMovilC" type="tel" required />
+                                    <label>Tel&eacute;fono M&oacute;vil:</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="txtEmailCliente" type="text" required />
+                                    <label>Correo Electronico:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- datos de seguridad -->
+                        <div class="row seccion-campos">                                                        
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="idCliente" type="hidden" disabled  />                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="codigoCliente" type="hidden" disabled />                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-1 mb-md-0">
+                                <div class="input-bodies">
+                                    <input id="idPersona" type="hidden" disabled  />                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- botones -->
+                <div class="row justify-content-center">
+                    <div class=" col-12">
+                        <div class="row">
+                            <div class="col-4 btn-div">
+                                <button class="btn btn-primary" onclick="cm.save();"><i
+                                        class="fas fa-save"></i>&nbsp;Guardar</button>
+                            </div>
+                            <div class="col-4 btn-div">
+                                <button class="btn btn-danger" onclick="cm.remove();"><i
+                                        class="fas fa-trash"></i>&nbsp;Eliminar</button>
+                            </div>
+                            <div class="col-4 btn-div">
+                                <button class="btn btn-success" onclick="cm.limpiarFormularioDetalle();"><i
+                                        class="fas fa-file"></i>&nbsp;&nbsp;Nuevo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divCatalogo" class="col-12 col-md-5">
+        <div class="card cards">
+            <div class="card-header card-hform">
+                <div class="row">
+                    <div class="col-12">Listado de Clientes</div>
+                    <div class="col-12">
+                        <form class="form">
+                            <label for="search">
+                                <input class="input" type="text" required="" placeholder="Buscar" id="txtSearch">
+                                <div class="fancy-bg"></div>
+                                <div class="search">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                                         class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                                    <g>
+                                    <path
+                                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                    </path>
+                                    </g>
+                                    </svg>
+                                </div>
+
+                            </label>
+                        </form>
+                    </div>
+                </div>            
+            </div>
+            <div class="card-body bodies table-responsive">
+                <table id="tblClientes" class="table">
+                    <thead aria-disabled="true">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Tel&eacute;fono Casa</th>
+                            <th>Tel&eacute;fono M&oacute;vil</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyClientes"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
